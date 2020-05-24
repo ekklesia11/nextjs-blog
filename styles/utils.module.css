@@ -40,13 +40,27 @@
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 2.5rem 0;
 }
 
 .listItem {
-  margin: 0 0 1.25rem;
+  margin: 0 0 2rem;
+  padding: 2rem;
+  color: #f8f8ff;
+  border-radius: 50px;
+  background: #1d4e89;
+  box-shadow: inset 20px 20px 60px #194274, inset -20px -20px 60px #215a9e;
+  transition: 1s;
+}
+
+.listItem:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1f5393, #1a467b);
+  box-shadow: 20px 20px 60px #194274, -20px -20px 60px #215a9e;
+  transition: 1s;
 }
 
 .lightText {
-  color: #999;
+  color: #d7d4d0;
+  font-size: 0.8rem;
 }

@@ -1,6 +1,7 @@
 ---
 title: "Where to start"
 date: "2020-05-21"
+description: "this is where to start you blog. github? or other pages?"
 ---
 
 # Where to start blog!
@@ -12,4 +13,3 @@ date: "2020-05-21"
 > glad to start my own blog with my own styles
 
 This is so good!
-
