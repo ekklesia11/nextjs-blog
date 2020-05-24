@@ -68,14 +68,12 @@
   border-radius: 24px;
   background: #1d4e89;
   box-shadow: inset 20px 20px 60px #194274, inset -20px -20px 60px #215a9e;
-  transition: 1s;
 }
 
 .listItem:hover {
   border-radius: 24px;
   background: linear-gradient(145deg, #1f5393, #1a467b);
   box-shadow: 20px 20px 60px #194274, -20px -20px 60px #215a9e;
-  transition: 1s;
 }
 
 .listLayout {
@@ -93,9 +91,10 @@
 }
 
 .listImg {
-  width: 10rem;
-  height: 10rem;
+  position: relative;
+  width: 40%;
   border-radius: 24px;
+  margin-right: 1rem;
 }
 
 .lightText {

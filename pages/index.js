@@ -18,21 +18,27 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, description, thumbnail }) => (
             <li className={utilStyles.listItem} key={id}>
-              <div className={utilStyles.listLayout}>
-                <Link href="/posts/[id]" as={`/posts/${id}`}>
-                  <a className={utilStyles.listTitle}>
-                    <h3 className={utilStyles.listH3}>{title}</h3>
-                    <p>{description}</p>
-                    <small className={utilStyles.lightText}>
-                      <span style={{ fontStyle: "italic" }}>posted on</span>{" "}
-                      <Date dateString={date} />
-                    </small>
-                  </a>
-                </Link>
-                {thumbnail !== "" && thumbnail ? (
-                  <img className={utilStyles.listImg} src={thumbnail} alt="" />
-                ) : null}
-              </div>
+              <Link href="/posts/[id]" as={`/posts/${id}`}>
+                <a className={utilStyles.listTitle}>
+                  <div className={utilStyles.listLayout}>
+                    {thumbnail !== "" && thumbnail ? (
+                      <img
+                        className={utilStyles.listImg}
+                        src={thumbnail}
+                        alt=""
+                      />
+                    ) : null}
+                    <div>
+                      <h3 className={utilStyles.listH3}>{title}</h3>
+                      <p>{description}</p>
+                      <small className={utilStyles.lightText}>
+                        <span style={{ fontStyle: "italic" }}>posted on</span>{" "}
+                        <Date dateString={date} />
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </Link>
             </li>
           ))}
         </ul>
