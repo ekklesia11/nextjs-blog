@@ -47,6 +47,11 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer>
+        <div className={styles.footer}>
+          © 2020 HappyQuokka powered by Vercel
+        </div>
+      </footer>
     </div>
   );
 }

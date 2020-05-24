@@ -12,19 +12,27 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <div className={utilStyles.countPost}>
+          {allPostsData.length} posts in total
+        </div>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, description }) => (
-            <Link href="/posts/[id]" as={`/posts/${id}`}>
-              <a>
-                <li className={utilStyles.listItem} key={id}>
-                  <div>{title}</div>
-                  <p>{description}</p>
-                  <small className={utilStyles.lightText}>
-                    <Date dateString={date} />
-                  </small>
-                </li>
-              </a>
-            </Link>
+          {allPostsData.map(({ id, date, title, description, thumbnail }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <div className={utilStyles.listLayout}>
+                <Link href="/posts/[id]" as={`/posts/${id}`}>
+                  <a className={utilStyles.listTitle}>
+                    <h3 className={utilStyles.listH3}>{title}</h3>
+                    <p>{description}</p>
+                    <small className={utilStyles.lightText}>
+                      <Date dateString={date} />
+                    </small>
+                  </a>
+                </Link>
+                {thumbnail !== "" && thumbnail ? (
+                  <img className={utilStyles.listImg} src={thumbnail} alt="" />
+                ) : null}
+              </div>
+            </li>
           ))}
         </ul>
       </section>

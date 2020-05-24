@@ -1,7 +1,7 @@
 .container {
   max-width: 36rem;
   padding: 0 1rem;
-  margin: 2rem auto 6rem;
+  margin: 2rem auto;
   position: relative;
 }
 
@@ -46,4 +46,10 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.footer {
+  color: #f8f8ff;
+  font-size: 0.75rem;
+  padding-top: 2rem;
 }
