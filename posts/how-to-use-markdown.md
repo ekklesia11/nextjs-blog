@@ -28,7 +28,13 @@ function test() {
 }
 ```
 
-3. Images
+3. Link
+
+> [Hypertext here](link url here)
+
+[example link](https://dev.chanhyun.org "title?")
+
+4. Images
 
 > ![alt text here](image url "hover text here")
 
