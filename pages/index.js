@@ -24,6 +24,7 @@ export default function Home({ allPostsData }) {
                     <h3 className={utilStyles.listH3}>{title}</h3>
                     <p>{description}</p>
                     <small className={utilStyles.lightText}>
+                      <span style={{ fontStyle: "italic" }}>posted on</span>{" "}
                       <Date dateString={date} />
                     </small>
                   </a>

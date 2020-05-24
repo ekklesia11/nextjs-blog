@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "HappyQuokka";
@@ -43,7 +42,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a className={styles.backToHomeA}>← Back to home</a>
           </Link>
         </div>
       )}
