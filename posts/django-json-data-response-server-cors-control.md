@@ -2,7 +2,7 @@
 title: "Django - Json Data Response Server / CORS control"
 date: "2019-09-21"
 description: "장고에서 데이터를 json 형태로 내려줄때 두가지 방법을 활용할 수 있다. HttpResponse 와 JsonResponse 를 활용해보자."
-thumbnail: "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+thumbnail: "https://miro.medium.com/max/780/0*n3Q53XmFcbOrGWgo.png"
 ---
 
 ## How to response to GET request
@@ -10,6 +10,8 @@ thumbnail: "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1
 장고에서 데이터를 json 형태로 내려줄때 두가지 방법을 활용할 수 있다. HttpResponse 와 JsonResponse 를 활용해보자.
 
 ### 1. HttpResponse
+
+<span style="color: orange">
 
 ```python
 # myproject/views.py
@@ -33,7 +35,12 @@ urlpatterns = [
 ]
 ```
 
+</span>
+<br/>
+
 ### 2. JsonResponse
+
+<span style="color: orange">
 
 ```python
 # myproject/views.py
@@ -56,17 +63,27 @@ urlpatterns = [
 ]
 ```
 
+</span>
+<br/>
+
 ## How to allow CORS
 
 CORS 를 허용하는 방법에도 미들웨어를 추가하는 방법과 모듈을 쓰는 방법이 있는데, 더 쉽게 활용 할 수 있는 모듈을 써서 CORS 허용을 해보자.
 
 ### 1. django-cors-headers module install
 
+<span style="color: orange">
+
 ```bash
 (venv) $ pip install django-cors-headers
 ```
 
+</span>
+<br/>
+
 ### 2. Settings
+
+<span style="color: orange">
 
 ```python
 #myproject/settings.py
@@ -99,6 +116,9 @@ CORS_ORIGIN_WHITELIST = [
 # ]
 
 ```
+
+</span>
+<br/>
 
 ## Recommended References :
 

@@ -2,7 +2,7 @@
 title: "Django - How does it work"
 date: "2019-09-20"
 description: "Node.js 와 마찬가지로 MVC 플로우 같은 구성으로 장고도 세팅이 가능하다. 장고에서는 MVT 의 구성으로 되어 있고 다음과 같이 동작한다."
-thumbnail: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=654&q=80"
+thumbnail: "https://miro.medium.com/max/780/0*n3Q53XmFcbOrGWgo.png"
 ---
 
 ## Models - Views - Template

@@ -2,12 +2,14 @@
 title: "Django - Secret Key"
 date: "2019-09-24"
 description: "자바스크립트에서 시크릿 키를 가져오는 것처럼 생각하면 안된다. 장고에서는 파일을 읽고 다시 한번 사용 가능하도록 변수에 담아주어야 사용이 가능하다."
-thumbnail: "https://images.unsplash.com/photo-1584985429926-08867327d3a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+thumbnail: "https://miro.medium.com/max/780/0*n3Q53XmFcbOrGWgo.png"
 ---
 
 자바스크립트에서 시크릿 키를 가져오는 것처럼 생각하면 안된다. 장고에서는 파일을 읽고 다시 한번 사용 가능하도록 변수에 담아주어야 사용이 가능하다.
 
 장고에서 생성한 앱 폴더 안에 secrets.json 이라는 파일을 만들고 그 안에 객체 형태로 넣어주었다.
+
+<span style="color: orange">
 
 ```json
 {
@@ -33,6 +35,9 @@ def get_secret(setting, secret=secret):
 
 SECRET_KEY = get_secret("SECRET_KEY")
 ```
+
+</span>
+<br/>
 
 이렇게 하면 따로 환경변수라고 지정하지 않아도 외부 파일에 저장된 시크릿 키를 사용할 수 있다.
 

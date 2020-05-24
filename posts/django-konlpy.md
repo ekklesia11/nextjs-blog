@@ -2,7 +2,7 @@
 title: "Django - KoNLPY"
 date: "2019-09-27"
 description: "쿼리셋을 불렀을때 .values() 로 실행시켜주면 리스트와 같은 모양의 쿼리셋이 나온다. 하지만 리스트와 같이 인덱스 넘버로 접근을 하려고 하면 에러를 뱉어준다. 이럴때는 .first() 를 활용하여 첫번째 인덱스의 값을 가져올 수 있다."
-thumbnail: "https://images.unsplash.com/photo-1587278795088-6e6835e571ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=568&q=80"
+thumbnail: "https://miro.medium.com/max/780/0*n3Q53XmFcbOrGWgo.png"
 ---
 
 ### 1. 쿼리셋에서 첫번째 인덱스에 접근하기
@@ -15,7 +15,7 @@ thumbnail: "https://images.unsplash.com/photo-1587278795088-6e6835e571ce?ixlib=r
 
 코넬파이에서는 utf-8 으로 변환이 안되는 이모티콘이나 \n 등 스트링이 아닌 타입이 들어가면 에러를 발생 시킨다. 이럴 때는 다음과 같은 함수를 쓰면 가능하다.
 
----
+<span style="color: orange">
 
 ```python
 def convertSpecialCharactersIntoSpace(string):
@@ -28,4 +28,4 @@ def convertSpecialCharactersIntoSpace(string):
     return newString
 ```
 
----
+</span>

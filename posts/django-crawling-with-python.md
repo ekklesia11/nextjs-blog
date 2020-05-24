@@ -2,12 +2,14 @@
 title: "Django - Crawling with python"
 date: "2019-09-21"
 description: "장고에서 크롤링하는 방법이 노드 익스프레스에서 크롤링 하는 방법과 크게 다르지 않다. 먼저 필요한 모듈을 설치하자."
-thumbnail: "https://images.unsplash.com/photo-1534105202621-4233721dcaff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1295&q=80"
+thumbnail: "https://miro.medium.com/max/780/0*n3Q53XmFcbOrGWgo.png"
 ---
 
 장고에서 크롤링하는 방법이 노드 익스프레스에서 크롤링 하는 방법과 크게 다르지 않다. 먼저 필요한 모듈을 설치하자.
 
 ### 1. requests / bs4 install
+
+<span style="color: orange">
 
 ```bash
 # python http request library
@@ -17,7 +19,12 @@ thumbnail: "https://images.unsplash.com/photo-1534105202621-4233721dcaff?ixlib=r
 (myvenv) $ pip install bs4
 ```
 
+</span>
+<br/>
+
 ### 2. 네이버 급상승 검색어 1~10위 Crawling
+
+<span style="color: orange">
 
 ```python
 import requests
@@ -34,3 +41,5 @@ topKeywords = soup.select('span.ah_k')
 for i in range(0, 10):
   	print(topKeywords[i].text)
 ```
+
+</span>

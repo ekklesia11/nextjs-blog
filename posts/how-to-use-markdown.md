@@ -1,7 +1,7 @@
 ---
 title: "How to use Markdown grammar"
 date: "2020-05-24"
-discription: "마크다운(Markdown)을 활용한 블로깅 방법을 소개합니다. 기본적으로 필요한 문법을 정리해봅니다."
+description: "마크다운(Markdown)을 활용한 블로깅 방법을 소개합니다. 기본적으로 필요한 문법을 정리해봅니다."
 thumbnail: ""
 ---
 

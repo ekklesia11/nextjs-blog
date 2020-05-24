@@ -2,22 +2,31 @@
 title: "Django - Install mysqlclient on Mac"
 date: "2019-09-27"
 description: "사실 아직 명확히 어떤 이유와 에러의 의미는 이해하지 못했으나 장고 서버를 설치 후 mysqlclient 를 인스톨 하면 무지막지한 에러를 뱉어낸다."
-thumbnail: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+thumbnail: "https://miro.medium.com/max/780/0*n3Q53XmFcbOrGWgo.png"
 ---
 
 사실 아직 명확히 어떤 이유와 에러의 의미는 이해하지 못했으나 장고 서버를 설치 후 mysqlclient 를 인스톨 하면 무지막지한 에러를 뱉어낸다.
 
 > virtual environment 가 activate 되어 있는지 확인한다.
 
+<span style="color: orange">
+
 ```bash
 $ pipenv install mysqlclient
 >>> ERROR
 ```
 
+</span>
+<br/>
+
 맥OS 환경과 파이썬 버전, 그리고 설치되어지는 mysqlclient 의 버전에 따라 문제가 발생하는 듯 하다. 구글링과 여러 블로그를 돌아다니면서 확인한 결과, openssl 사용해서 인스톨을 진행하면 문제없이 설치가 진행된다. 보통 맥OS 의 경우에 openssl 이 설치 되어 있을 수 있다. 그럼 에러를 해결해 보자.
+
+<span style="color: orange">
 
 ```bash
 $ brew install openssl
 $ LDFLAGS=-L/usr/local/opt/openssl/lib
 $ pipenv install mysqlclient
 ```
+
+</span>
