@@ -1,6 +1,6 @@
 ---
 title: "AWS EC2(Linux) + Nginx + Certbot(Let's Encrypt) = HTTPS"
-date: "2019-08-16"
+date: "2020-05-26"
 description: "AWS 리눅스에서 Nginx 를 활용하여 https 를 연결하는 방법을 소개한다."
 thumbnail: "https://netolink.com/wp-content/uploads/2016/12/http.png"
 ---
