@@ -12,8 +12,19 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <div className={utilStyles.countPost}>
-          {allPostsData.length} posts in total
+        <div className={utilStyles.stats}>
+          <div className={utilStyles.countPost}>
+            <div>
+              <a href="https://github.com/ekklesia11" target="_blank" rel="noopener noreferrer" className={utilStyles.snsStyle}>github</a>
+              <a href="https://instagram.com/d_paac" target="_blank" rel="noopener noreferrer">instagram</a>
+            </div>
+            <div>{allPostsData.length} posts in total</div>
+          </div>
+          <div className={utilStyles.countPost}>
+            <div>today: 2</div>
+            <div>yesterday: 4</div>
+            <div>57 visitors in total</div>
+          </div>
         </div>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, description, thumbnail }) => (

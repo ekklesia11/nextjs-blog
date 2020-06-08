@@ -47,12 +47,21 @@
   padding-top: 1px;
 }
 
-.countPost {
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin: 2.5rem 1rem 0;
+}
+
+.countPost {
   color: #f8f8ff;
-  text-align: right;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.snsStyle {
+  margin-right: 1rem;
 }
 
 .list {
