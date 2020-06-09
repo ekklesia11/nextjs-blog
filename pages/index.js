@@ -20,11 +20,6 @@ export default function Home({ allPostsData }) {
             </div>
             <div>{allPostsData.length} posts in total</div>
           </div>
-          <div className={utilStyles.countPost}>
-            <div>today: 2</div>
-            <div>yesterday: 4</div>
-            <div>57 visitors in total</div>
-          </div>
         </div>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, description, thumbnail }) => (

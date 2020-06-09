@@ -48,10 +48,8 @@
 }
 
 .stats {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   margin: 2.5rem 1rem 0;
+  text-align: right;
 }
 
 .countPost {
