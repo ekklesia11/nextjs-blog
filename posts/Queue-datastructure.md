@@ -7,7 +7,7 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue
 
 ## 큐(Queue) 란?
 
-description: "큐(Queue) 란?
+먼저 넣은 데이터가 먼저 나오는 FIFO(First In First Out) 구조 형식
 
 ### 장점:
 
