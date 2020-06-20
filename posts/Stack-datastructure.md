@@ -9,17 +9,17 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack_data_struc
 
 한 쪽 끝에서만 자료를 넣고 뺄 수 있는 LIFO(Last In First Out) or FILO(First In Last Out) 형식의 자료구조
 
-###장점:
+### 장점:
 
 - 구현이 쉽다.
 - 원하는 데이터의 접근 속도가 빠르다.
 
-###단점:
+### 단점:
 
 - 데이터의 최대 개수를 미리 정해야 한다.
 - 추가/삭제가 어렵다.
 
-##스택의 활용
+## 스택의 활용
 
 - 재귀 알고리즘
 - 실행 취소
@@ -28,9 +28,9 @@ thumbnail: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack_data_struc
 - 미로 찾기
 - 컴퓨터 메모리 관리 등
 
-##구현을 위한 의사코드(Pseudo Code)
+## 구현을 위한 의사코드(Pseudo Code)
 
-```
+```tex
 1. 데이터를 담을 수 있는 객체 생성
 2. 데이터의 추가/삭제 등 스택구조에 맞는 메소드함수를 만든다.
     2-1. push(date) : 데이터가 추가되는 순서에 따라 다음 키값을 지정해준다.
