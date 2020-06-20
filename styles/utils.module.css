@@ -47,12 +47,19 @@
   padding-top: 1px;
 }
 
-.countPost {
+.stats {
   margin: 2.5rem 1rem 0;
-  color: #f8f8ff;
   text-align: right;
+}
+
+.countPost {
+  color: #f8f8ff;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.snsStyle {
+  margin-right: 0.5rem;
 }
 
 .list {
