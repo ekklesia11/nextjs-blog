@@ -1,6 +1,6 @@
 ---
 title: "Stack data structure (스택 자료구조)"
-date: "2020-06-20"
+date: "2020-06-05"
 description: "스택이란 무엇인가? 한 쪽 끝에서만 자료를 넣고 뺄 수 있는 LIFO(Last In First Out) or FILO(First In Last Out) 형식의 자료구조"
 thumbnail: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Stack_data_structure.gif"
 ---
