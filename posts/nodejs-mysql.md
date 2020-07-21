@@ -1,7 +1,7 @@
 ---
 title: "Nodejs 에서 MySQL 연결하기"
 date: "2020-07-20"
-description: ""
+description: "AWS RDS 의 MySQL 을 활용하여 Nodejs 서버와 연결해보자"
 thumbnail: "https://pngimg.com/uploads/mysql/mysql_PNG10.png"
 ---
 
