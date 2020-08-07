@@ -13,10 +13,31 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.stats}>
+          <div>
+            <span className={utilStyles.countPost}>Category </span>
+            <select className={utilStyles.categories}>
+              <option>개발</option>
+              <option>생각</option>
+              <option>영어</option>
+            </select>
+          </div>
           <div className={utilStyles.countPost}>
             <div>
-              <a href="https://github.com/ekklesia11" target="_blank" rel="noopener noreferrer" className={utilStyles.snsStyle}>github</a>
-              <a href="https://instagram.com/d_paac" target="_blank" rel="noopener noreferrer">instagram</a>
+              <a
+                href="https://github.com/ekklesia11"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={utilStyles.snsStyle}
+              >
+                github
+              </a>
+              <a
+                href="https://instagram.com/d_paac"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                instagram
+              </a>
             </div>
             <div>{allPostsData.length} posts in total</div>
           </div>
