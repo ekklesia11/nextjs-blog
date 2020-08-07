@@ -6,6 +6,13 @@ import Date from "../components/date";
 import { getSortedPostsData } from "../lib/posts";
 
 export default function Home({ allPostsData }) {
+  // let categorySelected = "개발";
+
+  // const setCategory = (cat) => {
+  //   console.log(cat.target.value);
+  //   categorySelected = cat.target.value;
+  // };
+
   return (
     <Layout home>
       <Head>
@@ -13,14 +20,14 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={utilStyles.stats}>
-          <div>
+          {/* <div>
             <span className={utilStyles.countPost}>Category </span>
-            <select className={utilStyles.categories}>
+            <select className={utilStyles.categories} onChange={setCategory}>
               <option>개발</option>
               <option>생각</option>
               <option>영어</option>
             </select>
-          </div>
+          </div> */}
           <div className={utilStyles.countPost}>
             <div>
               <a
@@ -43,31 +50,33 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title, description, thumbnail }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a className={utilStyles.listTitle}>
-                  <div className={utilStyles.listLayout}>
-                    {thumbnail !== "" && thumbnail ? (
-                      <img
-                        className={utilStyles.listImg}
-                        src={thumbnail}
-                        alt=""
-                      />
-                    ) : null}
-                    <div>
-                      <h3 className={utilStyles.listH3}>{title}</h3>
-                      <p>{description}</p>
-                      <small className={utilStyles.lightText}>
-                        <span style={{ fontStyle: "italic" }}>posted on</span>{" "}
-                        <Date dateString={date} />
-                      </small>
+          {allPostsData.map(({ id, date, title, description, thumbnail }) => {
+            return (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href="/posts/[id]" as={`/posts/${id}`}>
+                  <a className={utilStyles.listTitle}>
+                    <div className={utilStyles.listLayout}>
+                      {thumbnail !== "" && thumbnail ? (
+                        <img
+                          className={utilStyles.listImg}
+                          src={thumbnail}
+                          alt=""
+                        />
+                      ) : null}
+                      <div>
+                        <h3 className={utilStyles.listH3}>{title}</h3>
+                        <p>{description}</p>
+                        <small className={utilStyles.lightText}>
+                          <span style={{ fontStyle: "italic" }}>posted on</span>{" "}
+                          <Date dateString={date} />
+                        </small>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </Link>
-            </li>
-          ))}
+                  </a>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </Layout>

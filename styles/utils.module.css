@@ -49,8 +49,7 @@
 
 .stats {
   margin: 2.5rem 1rem 0;
-  display: flex;
-  justify-content: space-between;
+  text-align: right;
 }
 
 .categories {
@@ -59,6 +58,7 @@
   border-radius: 15px;
   padding: 0.5rem;
   background: #f8f8ff;
+  margin-left: 0.5rem;
 }
 
 .countPost {
