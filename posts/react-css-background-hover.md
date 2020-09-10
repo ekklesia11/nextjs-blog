@@ -2,7 +2,7 @@
 title: "React 에서 CSS background 이미지는 스케일 아웃시키고 새로운 background 색상으로 덮어버리기! + 텍스트 쇼업"
 date: "2020-09-10"
 description: "카드 위에 마우스를 올리면 배경을 스케일 아웃시키면서 백그라운드를 입혀주는 이펙트"
-thumbnail: "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"
+thumbnail: "https://miro.medium.com/max/3200/1*8slP0diGduUQy3qk9N7HsQ.png"
 ---
 
 ## 리액트에서 카드 호버 이펙트 살리기
